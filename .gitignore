@@ -1,10 +1,55 @@
-# Python caches
+# -------------------------------------
+# Python
+# -------------------------------------
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.sqlite3
+*.db
 
-# Environment files
-.env
-
-# Virtual environments
+# -------------------------------------
+# Ambiente virtual
+# -------------------------------------
 venv/
-.venv/
+.env/
+.env.*  # qualquer arquivo de ambiente
+
+# -------------------------------------
+# Logs e debug
+# -------------------------------------
+*.log
+*.out
+*.err
+
+# -------------------------------------
+# VSCode / IDEs
+# -------------------------------------
+.vscode/
+.idea/
+*.swp
+
+# -------------------------------------
+# Arquivos temporários / cache
+# -------------------------------------
+*.tmp
+*.bak
+*.old
+*.orig
+.DS_Store
+Thumbs.db
+
+# -------------------------------------
+# Padrões específicos do projeto
+# -------------------------------------
+# Arquivos do FastAPI
+*.pid
+
+# Build / Distribuição
+build/
+dist/
+*.egg-info/
+
+# Docker (caso use futuramente)
+docker-compose.override.yml
