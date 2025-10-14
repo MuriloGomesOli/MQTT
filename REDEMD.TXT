@@ -1,1 +1,17 @@
-JXJJ
+✅ o objetivo do projeto,
+✅ as etapas de configuração,
+✅ e como rodar o sistema completo (FastAPI + MQTT + MySQL + Camila).
+
+🧠 Visão geral
+
+O projeto tem dois componentes principais:
+
+mqtt_client.py → recebe e armazena os dados vindos da Camila via MQTT.
+
+main.py → expõe uma API HTTP com FastAPI para consultar os dados armazenados.
+
+Eles trabalham juntos, mas de forma independente:
+
+o mqtt_client.py fica rodando em segundo plano, ouvindo mensagens da Camila,
+
+e o main.py serve os dados pela web para quem quiser acessar.
